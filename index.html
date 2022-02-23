@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Codelabs" />
+    <meta name="author" content="Rendi Julianto" />
+    <meta
+      name="description"
+      content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam quisquam dicta, commodi ipsam vitae incidunt illo voluptas consequatur corrupti similique! Sed fugiat aliquam deserunt dolore suscipit ut maxime eos!"
+    />
+
+    <title>Movies List</title>
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/tv.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav class="nav container">
+      <!-- Membuat Logo  -->
+      <div class="nav__logo">
+        <img src="assets/images/tv.png" alt="logo" height="50px" />
+        <h1>MovieBox</h1>
+      </div>
+      <!-- Membuat Search  -->
+      <div class="nav__search">
+        <form action="search.php" method="get">
+          <div class="group-icon">
+            <input placeholder="What do you want to watch?" />
+            <img class="group-icon_image" src="assets/icons/search.svg" />
+          </div>
+        </form>
+      </div>
+      <div class="nav__right">
+        <a href="/" class="text-white">Sign in</a>
+        <button class="nav__button bg-red-600">
+          <img
+            src="assets/icons/menu-alt.png"
+            width="24px"
+            height="24px"
+            alt="menu"
+          />
+        </button>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="container">
+        <!-- Content  -->
+        <div class="row relative">
+          <div class="col-3 description">
+            <h1 class="text-white description__title">
+              John Wick 3 : Parabellum
+            </h1>
+            <div class="description__rating">
+              <div class="imDb">
+                <img src="/assets/images/IMDb.png" width="35px" height="17px" />
+                <p>86.0 / 100</p>
+              </div>
+              <div class="rotten">
+                <img
+                  src="/assets/images/Rotten.png"
+                  width="16px"
+                  height="17px"
+                />
+                <p>97%</p>
+              </div>
+            </div>
+            <div class="description__text">
+              <p>
+                John Wick is on the run after killing a member of the
+                international assassins' guild, and with a $14 million price tag
+                on his head, he is the target of hit men and women everywhere.
+              </p>
+            </div>
+            <button class="description__button">
+              <img src="/assets/icons/Play.svg" />
+              <span> Watch Tailer </span>
+            </button>
+          </div>
+          <div class="col-9 info-right">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li class="active">3</li>
+              <li>4</li>
+              <li>5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="movies">
+      <div class="container">
+        <div style="margin-bottom: 70px">
+          <div class="movies_title">
+            <h1 style="margin-bottom: 40px">Popular</h1>
+            <p>See more</p>
+          </div>
+          <div class="movies_list" id="movies_popular"></div>
+        </div>
+        <div style="margin-bottom: 70px">
+          <div class="movies_title">
+            <h1 style="margin-bottom: 40px">Film yang akan datang</h1>
+            <p>See more</p>
+          </div>
+          <div class="movies_list" id="movies_upcoming"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__icon">
+        <a href="#">
+          <img src="/assets/icons/facebook.svg" />
+        </a>
+        <a href="#">
+          <img src="/assets/icons/instagram.svg" />
+        </a>
+        <a href="#">
+          <img src="/assets/icons/twitter.svg" />
+        </a>
+        <a href="#">
+          <img src="/assets/icons/youtube.svg" />
+        </a>
+      </div>
+      <div class="footer__page">
+        <a href="/">Conditions of Use</a>
+        <a href="/">Privacy & Policy</a>
+        <a href="/">Press Room</a>
+      </div>
+      <div class="footer__copyright">2021 MovieBox By Rendi Julianto</div>
+    </footer>
+  </body>
+
+  <script type="text/javascript" src="assets/js/api.js"></script>
+  <script type="text/javascript">
+    setInterval(function () {
+      if (window.scrollY > 100) {
+        document.querySelector(".nav").style.backgroundColor =
+          "rgba(0, 0, 0, 0.8)";
+      } else {
+        document.querySelector(".nav").style.backgroundColor = "transparent";
+      }
+    }, 500);
+  </script>
+</html>

@@ -1,0 +1,286 @@
+.container {
+  padding: 15px 98px;
+}
+.hero {
+  background-image: url("/assets/images/background-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.absolute {
+  position: absolute;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  /* background-color: black; */
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+.nav__logo h1 {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+
+  color: #ffffff;
+}
+
+.nav__search {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav__search input {
+  color: white;
+  width: 500px;
+  background: transparent;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.nav__search ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.nav__search :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+.nav__search ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+.nav__search input:focus {
+  outline: none;
+}
+.nav__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+
+.nav__right a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.group-icon {
+  position: relative;
+}
+.group-icon_image {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+
+.nav__button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  padding: 6px;
+  border-radius: 100%;
+}
+.description {
+  margin-top: 150px;
+}
+
+.description__title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.description__rating {
+  display: flex;
+}
+
+.imDb {
+  display: flex;
+  margin-right: 34px;
+  color: white;
+  align-items: center;
+}
+.imDb p {
+  margin-left: 10px;
+}
+
+.rotten {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+.rotten p {
+  margin-left: 10px;
+}
+
+.description__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 16px;
+  color: white;
+}
+.description__button {
+  cursor: pointer;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 6px 16px;
+  background: rgba(190, 18, 60, 1);
+  border-radius: 6px;
+  border: none;
+}
+.description__button span {
+  margin-left: 10px;
+}
+
+.info-right ul {
+  cursor: pointer;
+  top: 50%;
+  color: white;
+  position: absolute;
+  right: -80px;
+  list-style-type: none;
+}
+.info-right ul li {
+  margin-top: 10px;
+  color: rgba(156, 163, 175, 1);
+  text-decoration: none;
+}
+.info-right ul li.active {
+  color: white;
+}
+.info-right li.active::before {
+  color: white;
+  margin-left: -12px;
+  content: "- ";
+}
+
+.movies {
+  margin-top: 70px;
+}
+
+.movies_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.card__content__date {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 12px;
+  color: #9ca3af;
+  line-height: 16px;
+  margin-bottom: 12px;
+}
+.card__content__title {
+  cursor: pointer;
+  margin-bottom: 14px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+
+  /* gray/900 */
+
+  color: #111827;
+}
+
+.card__content__rating {
+  margin-bottom: 12px;
+  display: flex;
+}
+.card__content__rating p {
+  color: #111827;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.movies_list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__content__gendre {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  /* gray/400 */
+  color: #9ca3af;
+}
+
+.footer {
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.footer__icon {
+  text-align: center;
+  margin-bottom: 36px;
+}
+.footer__icon a {
+  text-decoration: none;
+  margin-right: 48px;
+}
+
+.footer__page {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.footer__page a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+
+  /* gray/900 */
+
+  color: #111827;
+  margin-right: 48px;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin-bottom: 36px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+
+  /* gray/500 */
+
+  color: #6b7280;
+}
+
+.movies_title p {
+  color: darkgray;
+  cursor: pointer;
+}
