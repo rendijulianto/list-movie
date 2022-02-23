@@ -36,7 +36,7 @@ const showData = (movies,content) => {
           <div class="card__content__rating">
             <div class="imDb">
               <img
-                src="/assets/images/IMDb.png"
+                src="assets/images/IMDb.png"
                 width="35px"
                 height="17px"
               />
@@ -44,7 +44,7 @@ const showData = (movies,content) => {
             </div>
             <div class="rotten">
               <img
-                src="/assets/images/Rotten.png"
+                src="assets/images/Rotten.png"
                 width="16px"
                 height="17px"
               />
