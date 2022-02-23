@@ -2,7 +2,7 @@
   padding: 15px 98px;
 }
 .hero {
-  background-image: url("assets/images/background-1.png");
+  background-image: url(../../assets/images/background-1.png);
   background-size: cover;
   background-position: center;
   height: 80vh;
