@@ -19,7 +19,7 @@ const showData = (movies,content) => {
         let dateConvert = new Date(movie.release_date);
        
         HTMLCard += `
-        <div class="card col-3">
+        <div class="card col-3 col-sm-6">
         <div class="card__image">
          <a href="#">
           <img
@@ -68,7 +68,6 @@ const convertGender = (gendre) => {
             } 
         });
     }
-
     return textGen;
   
 }
@@ -92,6 +91,13 @@ window.addEventListener('DOMContentLoaded', () => {
         const results = data.results;
      
         showData(results ,'movies_upcoming');
+    });
+    fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=190e4cff1377ee683cd88f35c0f7fa19`)
+    .then(res => res.json())
+    .then(data => {
+        const results = data.results;
+     
+        showData(results ,'movies_playnow');
     });
     convertGender();
 })
