@@ -26,7 +26,9 @@
 .nav__logo {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
+
 .nav__logo h1 {
   margin-left: 10px;
   font-weight: bold;
@@ -151,6 +153,8 @@
   background: rgba(190, 18, 60, 1);
   border-radius: 6px;
   border: none;
+  width: 170px;
+  text-decoration: none;
 }
 .description__button span {
   margin-left: 10px;
@@ -353,4 +357,17 @@
   .info-right ul {
     right: 0;
   }
+}
+
+#movie_description {
+  height: 100px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  text-overflow: clip;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#movie_description::-webkit-scrollbar {
+  display: none;
 }
