@@ -10,14 +10,17 @@ const showDataDetail = (movie) => {
    document.querySelector(".hero").style.backgroundSize  = `cover`;
    document.querySelector(".hero").style.backgroundPosition  = `center`;
    document.querySelector(".hero").style.backgroundRepeat = `no-repeat`;
-
    document.title += ' | '+ movie.title;
-
   
 }
 
 
 window.addEventListener('DOMContentLoaded', () => {
+    fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=190e4cff1377ee683cd88f35c0f7fa19`)
+    .then(res => res.json())
+    .then(data => {
+        gendres = data.genres;
+    });
     let idMovie = getParameterByName('movie');
     if(idMovie) {
         fetch(`https://api.themoviedb.org/3/movie/${idMovie}?api_key=190e4cff1377ee683cd88f35c0f7fa19`)
