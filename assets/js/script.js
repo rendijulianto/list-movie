@@ -40,7 +40,9 @@ setInterval(function () {
         </div>
         <div class="card__content">
           <p class="card__content__date">${movie.original_language}, ${dateConvert.toDateString()}</p>
-          <h4 class="card__content__title">${movie.title}</h4>
+          <a style="text-decoration:none" href="detail.html?movie=${movie.id}">
+            <h4 class="card__content__title">${movie.title}</h4>
+          </a>
           <div class="card__content__rating">
             <div class="imDb">
               <img
