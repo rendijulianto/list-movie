@@ -116,22 +116,22 @@
   display: flex;
 }
 
-.imDb {
+.rating {
   display: flex;
   margin-right: 34px;
   color: white;
   align-items: center;
 }
-.imDb p {
+.rating p {
   margin-left: 10px;
 }
 
-.rotten {
+.voters {
   display: flex;
   color: white;
   align-items: center;
 }
-.rotten p {
+.voters p {
   margin-left: 10px;
 }
 

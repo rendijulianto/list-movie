@@ -44,17 +44,17 @@ setInterval(function () {
             <h4 class="card__content__title">${movie.title}</h4>
           </a>
           <div class="card__content__rating">
-            <div class="imDb">
+            <div class="rating">
               <img
-                src="assets/images/IMDb.png"
-                width="35px"
+                src="assets/icons/star.png"
+                width="20px"
                 height="17px"
               />
               <p>${movie.vote_average}</p>
             </div>
-            <div class="rotten">
+            <div class="voters">
               <img
-                src="assets/images/Rotten.png"
+                src="assets/icons/vote.png"
                 width="16px"
                 height="17px"
               />
